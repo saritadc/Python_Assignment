@@ -17,5 +17,3 @@ print(dict(char_sorted))
 
 
 
-
-
