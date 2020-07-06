@@ -9,10 +9,11 @@
 
 sample = input("Enter a string: ")
 length = len(sample)
-last_char = sample[-3:]
-if length >= 3 and last_char != "ing":
+last_char = sample.endswith("ing")
+
+if length >= 3 and not last_char:
     print(sample + "ing")
-elif length >= 3 and last_char == "ing":
+elif length >= 3 and last_char:
     print(sample + "ly")
 elif length < 3:
     print(sample)
