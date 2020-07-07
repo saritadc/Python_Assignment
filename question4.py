@@ -9,4 +9,4 @@ string_two = input("Enter second string: ")
 string_swap1 = string_one.replace(string_one[0:2], string_two[0:2])
 string_swap2 = string_two.replace(string_two[0:2], string_one[0:2])
 
-print(string_swap1+ " " + string_swap2)
+print(string_swap1 + " " + string_swap2)
