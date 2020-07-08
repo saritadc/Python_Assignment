@@ -4,16 +4,14 @@
 
 sample = input("Enter sample string: ")
 char_frequency = {}
+
 for char in sample:
     if char in char_frequency:
         char_frequency[char] += 1
     else:
         char_frequency[char] = 1
+        
 char_sorted = sorted(char_frequency.items(),
-                     key=lambda keyvalue: keyvalue[1], 
+                     key=lambda keyvalue: keyvalue[1],
                      reverse=True)
 print(dict(char_sorted))
-
-
-
-
