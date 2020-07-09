@@ -4,6 +4,6 @@
 # Expected Result: black, green, red, white, red
 
 sample_words = input("Input comma separated sequence of words: ")
-words_list = [word for word in sample_words.split(",")]
+words_list = sample_words.split(",")
 
-print(",".join(sorted(list(set(words_list)))))
+print(",".join(sorted(set(words_list))))
