@@ -5,6 +5,6 @@ def remove_duplicate(lists):
         if lists.count(item) >=2:
             lists.remove(item)
         
-    print(lists)
+    return print(lists)
 
 remove_duplicate([1,1,3,4,5,3,4])
