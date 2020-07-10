@@ -12,4 +12,7 @@ dic3 = {5: 50, 6: 60}
 dict4 = {}
 
 {dict4.update(items) for items in (dic1, dic2, dic3)}
+for items in (dic1, dic2, dic3):
+    print(items)
+
 print(dict4)
